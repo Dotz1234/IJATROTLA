@@ -8,6 +8,6 @@ public class TriggerObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        adBoard.SetActive(true);
+        adBoard.SetActive(false);
     }
 }

@@ -1,10 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.UI;
 
 public class Player_follow : MonoBehaviour
 {
+    public GameOverScreen GameOverScreen;
+    int maxPlatform = 0;
     public Transform PlayerTransform;
+
+    public void GameOver()
+    {
+        GameOverScreen.Setup(maxPlatform);
+    }
 
     private Vector3 _cameraOffset;
 
